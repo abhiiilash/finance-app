@@ -41,7 +41,7 @@ const initialData = {
     { id: 'i2', name: 'Fixed Deposit', invested: 200000, current: 210000 }
   ],
   settings: {
-    gasUrl: '' 
+    gasUrl: 'https://script.google.com/macros/s/AKfycbylrkrGSUqpLQ0Va9yBEDlpWRBgin2d6pTPpopk1MRa6gynZQHMRoXFw8V5nk9E97rPaA/exec' 
   }
 };
 
@@ -204,8 +204,8 @@ export default function App() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-[#1a1d27] rounded-[2rem] p-6 shadow-md text-white relative overflow-hidden">
           <div className="absolute -right-4 -top-4 w-24 h-24 bg-white opacity-5 rounded-full blur-2xl"></div>
-          <p className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-2">Net Worth</p>
-          <h2 className="text-4xl font-bold mb-4">₹{metrics.netWorth.toLocaleString()}</h2>
+          <p className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 ">Net Worth</p>
+          <h2 className="text-4xl font-bold mb-4" text-color='red;'>₹{metrics.netWorth.toLocaleString()}</h2>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full text-xs font-semibold">
             <TrendingUp size={14} className="text-[#6a95ea]" /> Overall Health
           </div>

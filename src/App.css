@@ -114,7 +114,9 @@
   .logo {
     height: 18px;
   }
-
+text-slate-400 text-xs font-bold uppercase tracking-wider mb-2 nt-text{
+  color:red;
+}
   a {
     color: var(--text-h);
     font-size: 16px;
